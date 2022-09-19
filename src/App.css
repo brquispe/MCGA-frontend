@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #22223bff;
+  --color-secondary: #4a4e69ff;
+  --color-third: #9a8c98ff;
+  --color-fourth: #c9ada7ff;
+  --color-light: #f2e9e4ff;
+  --color-white: #fff;
+}
+
+.App {
+  margin: 1.5rem auto;
+  width: 95%;
+}
