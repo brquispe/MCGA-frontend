@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './Form.css';
+import styles from './login.module.css';
 
-export const Form = () => {
+export const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -24,18 +24,18 @@ export const Form = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="form-control">
+      <div className={styles["form-control"]}>
         <label htmlFor="username">Usuario</label>
         <input
           type="text"
           name="username"
           value={username}
           onChange={onChangeUsername}
-          required
+          required  
         />
       </div>
 
-      <div className="form-control">
+      <div className={styles["form-control"]}>
         <label htmlFor="password">Contraseña</label>
         <input
           type="password"

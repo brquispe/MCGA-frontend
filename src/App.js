@@ -1,11 +1,15 @@
 import './App.css';
-import { Form } from "./components/Form/Form";
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { Login } from './screens/Login';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Form />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="*" element={<Products />} />
+      </Routes>
+    </Layout>
   );
 }
 
